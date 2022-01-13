@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="breadcumb-wrap">
-                        <h2>Service</h2>
+                        <h2>Services</h2>
                         <ul>
                             <li><a href="{{url('/')}}">Home</a></li>
                             <li>/</li>

@@ -9,13 +9,13 @@
             <div class="row">
                 <div class="col-12">
                     <div class="breadcumb-wrap">
-                        <h2>Service Details</h2>
+                        <h2>{{$Services->title}}</h2>
                         <ul>
                             <li><a href="{{url('/')}}">Home</a></li>
                             <li>/</li>
                             <li><a href="{{url('/services')}}">Services</a></li>
                             <li>/</li>
-                            <li>{{$page_title}}</li>
+                            <li>{{$Services->title}}</li>
                         </ul>
                     </div>
                 </div>
@@ -29,43 +29,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="blog-wrap">
-                       
-                        <!-- Slider -->
-                        <div class="slider-area">
-                                <div class="slider-active next-prev-style">
-                                <!-- Single -->
-                                    <div class="slider-items">
-                                        <img src="{{url('/')}}/uploads/services/{{$Services->image_one}}" alt="" class="slider">
-                                    </div>
-
-                                    <div class="slider-items">
-                                        <img src="{{url('/')}}/uploads/services/{{$Services->image_two}}" alt="" class="slider">
-                                    </div>
-
-                                    <div class="slider-items">
-                                        <img src="{{url('/')}}/uploads/services/{{$Services->image_three}}" alt="" class="slider">
-                                    </div>
-                                <!-- </Single -->
-                                    
-                                
-                                </div>
-                        </div>
-                        <!-- </Slider -->
-                        
-                    </div>
+                    
                     <div class="blog-details-wrap">
                         <p>{!!html_entity_decode($Services->content)!!}</p>
                      </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                     <aside class="sidebar-wrap">
-                        <div class="search-wrap widget">
-                            <form action="#">
-                                <input type="text" placeholder="Search...">
-                                <button><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
+                      
                         <div class="widget sidebar-menu">
                             <h3 class="widget-title">Other Services</h3>
                             <ul>
@@ -84,19 +55,29 @@
         </div>
     </div>
     <!-- blog-area end -->
-    <!-- quote-area start -->
-    <div class="quote-area">
+    <br><br>
+    <section class="section-50 section-sm-90 section-lg-top-120">
+     
+     
+        
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="quote-wrap text-center">
-                        <h2>Would you like us to handle your project?</h2>
-                        <a href="{{url('/contact')}}">Get a quote</a>
-                    </div>
-                </div>
-            </div>
+          <section class="customer-logos slider">
+            
+            <?php $Clients = DB::table('clients')->get(); ?>
+            @foreach($Clients as $clients)
+            <div class="slide"><img src="{{url('/')}}/uploads/clients/{{$clients->image}}"></div>
+            @endforeach
+            
+          </section>
         </div>
-    </div>
+       
+          
+       
+      
+    </section>	
+    <br><br>
+    <!-- quote-area start -->
+@include('front.interior')
     <!-- quote-area end -->     
 
 @endsection

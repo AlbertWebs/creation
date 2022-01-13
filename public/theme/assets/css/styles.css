@@ -603,3 +603,20 @@
  50%{transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);-webkit-transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg)}
  100%{transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);-webkit-transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}
  }
+
+
+ .interior-wrap h2{
+    color:#ffffff;
+ }
+
+ .interior-wrap p{
+    color:#ffffff;
+ }
+
+ .interior-wrap span{
+    color:#ffffff;
+ }
+
+ .breadcumb-wrap h2{
+     color:#ffffff;
+ }

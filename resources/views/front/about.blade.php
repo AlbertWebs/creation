@@ -48,6 +48,8 @@
     </div>
     @endforeach
     <!-- about-area end -->
+
+    @include('front.interior')
  
     @if($Testimonial->isEmpty())
 

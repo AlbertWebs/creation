@@ -59,5 +59,7 @@
         </div>
     </div>
     <!-- .project-area end -->
+   
+    @include('front.interior')
 
 @endsection
