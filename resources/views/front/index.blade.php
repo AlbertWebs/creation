@@ -5,7 +5,8 @@
             <div class="slider-active2 next-prev-style">
                @foreach($Slider as $slider)
                 <div class="slider-items">
-                    <img src="{{url('/')}}/uploads/slider/{{$slider->image}}" alt="" class="slider">
+                    {{-- 1920 by 771 --}}
+                    <img src="{{url('/')}}/uploads/slider/{{$slider->image}}" alt="Creation Office Fitouts" class="slider">
                     <div class="slider-content">
                         <div class="container">
                             <div class="row">
@@ -64,7 +65,7 @@
            <div class="row">
               <div class="col-lg-6 d-lg-block d-none ">
                  <div class="spacial-img">
-                    <img src="{{asset('archirio/assets/images/spacial/1.jpg')}}" alt="">
+                    <img src="{{asset('theme/assets/images/spacial/1.jpg')}}" alt="">
                  </div>
               </div>
               <div class="col-lg-6 col-12">
@@ -298,11 +299,11 @@
    
 
     <div class="brand-area brand-area2">
-        <div class="container">
+        <div class="container" >
            <div class="row">
-            <?php $Clients = DB::table('clients')->get(); ?>
+            <?php $Clients = DB::table('clients')->limit(30)->get(); ?>
             @foreach($Clients as $clients)
-              <div class="col-lg-2 col-sm-4 col-3 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+              <div class="col-lg-2 col-sm-4 col-3 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms" style="margin:0 auto;">
                  <div class="brand-wrap text-center">
                     <img style="width:170px; height:120px; border:1px solid #000000" src="{{url('/')}}/uploads/clients/{{$clients->image}}" alt="{{$clients->name}}">
                     <h6 style="max-width:180px; margin:0 auto; margin-top:5px; margin-bottom:5px; font-weight:600">{{$clients->name}}</h6>

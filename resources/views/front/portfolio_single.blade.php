@@ -232,5 +232,7 @@
         </div>
     </div>
     <!-- spacial-area end -->
+
+    @include('front.interior')
    
 @endsection
