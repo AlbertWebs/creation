@@ -89,7 +89,7 @@ class HomeController extends Controller
         $Slider = Slider::all();
         $Blog = DB::table('blog')->paginate(3);
         $Portfolio = DB::table('portfolio')->orderByDesc('id')->paginate(9);
-        $Services = DB::table('services')->inRandomOrder()->paginate(3);
+        $Services = DB::table('services')->inRandomOrder()->paginate(6);
         $Testimonial = Testimonial::all();
         $Clients = DB::table('clients')->inRandomOrder()->paginate(20);
         $SiteSettings = DB::table('sitesettings')->get();
@@ -275,7 +275,7 @@ class HomeController extends Controller
     {
         $Services = Services::where('slung',$slung)->get();
         foreach($Services as $service){
-            $page_title = $Services->title;
+            $page_title = $service->title;
             
             SEOMeta::setTitle(''.$page_title.' | Contractor in Kenya');
             SEOMeta::setDescription('Interior Design Company in Nairobi - Interior Architecture , Construction, Refurbishment, Partitioning , Ceiling & Floors, Furniture Supplies');
@@ -291,7 +291,7 @@ class HomeController extends Controller
             TwitterCard::setTitle(''.$page_title.' | Contractor in Kenya');
             TwitterCard::setSite('@creationoffice1');
 
-            $Services = Services::all();
+            $Services = Services::find($service->id);
             $page_title = 'Our Services';
             return view('front.service',compact('Services','page_title'));
         }

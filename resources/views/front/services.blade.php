@@ -31,29 +31,23 @@
     <div class="service-area bg-1">
         <div class="container">
             <div class="row">
-            <?php $countP = 1; ?>
+                <?php $countP = 0.5; ?>
                 @foreach($Services as $service)
                 <div class="col-sm-6 col-12 col-lg-4">
-                        <div class="service-wrap wow fadeInUp" data-wow-duration="1s" data-wow-delay="{{$countP}}s">
-                            <div class="service-img">
-                                <img src="{{url('/')}}/uploads/services/{{$service->image_one}}" alt="">
-                            </div>
-                            <div class="service-content">
-                                <h4>{{$service->title}}</h4>
-                                <p>
-                                  {!!html_entity_decode($service->content)!!}
-                                </p>
-                                
-                            </div>
+                    <div class="service-wrap wow fadeInUp" data-wow-duration="1s" data-wow-delay="{{$countP}}s">
+                        <div class="service-img">
+                        <img  style="max-height:265px; min-height:265px" src="{{url('/')}}/uploads/services/{{$service->image_one}}" alt="{{$service->title}} Creation Office Fiouts">
+                        </div>
+                        <div class="service-content">
+                        <h4>{{$service->title}}</h4>
+                        <p>{{$service->meta}}</p>
+                        <a href="{{url('/')}}/services/{{$service->slung}}">Read More</a>
                         </div>
                     </div>
-                    <?php $countP+0.2 ?>
+                </div>
+                <?php $countP+0.5 ?>
                 @endforeach
-
-                
-
-                
-            
+              
             </div>
         </div>
     </div>

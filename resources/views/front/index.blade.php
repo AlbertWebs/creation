@@ -57,14 +57,14 @@
               <div class="col-12">
                  <div class="section-title text-center">
                     <h2>OUR SPECIALIZATION</h2>
-                    <h3>We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients</h3>
+                    <h3 style="max-width:500px; margin:0 auto;">We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients</h3>
                  </div>
               </div>
            </div>
            <div class="row">
               <div class="col-lg-6 d-lg-block d-none ">
                  <div class="spacial-img">
-                    <img src="{{asset('theme/assets/images/spacial/1.jpg')}}" alt="">
+                    <img src="{{asset('archirio/assets/images/spacial/1.jpg')}}" alt="">
                  </div>
               </div>
               <div class="col-lg-6 col-12">
@@ -135,75 +135,43 @@
     </div>
     <!-- .project-area end -->
 
-       @if($Services->isEmpty())
+    @if($Services->isEmpty())
 
-@else
-    <!-- service-area start -->
-<div class="service-area bg-1">
-    <div class="container">
+    @else
+    <div class="service-area bg-1">
+        <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="section-title text-center">
-                    <h2>Our Services</h2>
-                 </div>
+                    <h2>Services</h2>
+                    <h3 style="max-width:500px; margin:0 auto;">Our team comprises of vibrant, creative, and exemplary interior designers whose sole objective is to deliver quality and excellence to our clients</h3>
+                </div>
             </div>
         </div>
-        
         <div class="row">
-           <!-- Services Starts -->
-        <?php $countP = 0.5; ?>
-        @foreach($Services as $service)
-        <div class="col-lg-4 col-sm-6 col-12">
-                <div class="blog-wrap2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="{{$countP}}s">
-                    <img style="max-height:265px; min-height:265px" src="{{url('/')}}/uploads/services/{{$service->image_one}}" alt="">
-                    <div class="blog-content2">
-                        
-                        <h4><a href="{{url('/services')}}"><center>{{$service->title}}</center></a></h4>
-                      
-                        
+            <?php $countP = 0.5; ?>
+            @foreach($Services as $service)
+            <div class="col-sm-6 col-12 col-lg-4">
+                <div class="service-wrap wow fadeInUp" data-wow-duration="1s" data-wow-delay="{{$countP}}s">
+                    <div class="service-img">
+                    <img  style="max-height:265px; min-height:265px" src="{{url('/')}}/uploads/services/{{$service->image_one}}" alt="{{$service->title}} Creation Office Fiouts">
+                    </div>
+                    <div class="service-content">
+                    <h4>{{$service->title}}</h4>
+                    <p>{{$service->meta}}</p>
+                    <a href="{{url('/')}}/services/{{$service->slung}}">Read More</a>
                     </div>
                 </div>
             </div>
             <?php $countP+0.5 ?>
             @endforeach
-        <!-- Services Stops -->
-           
+          
+        </div>
         </div>
     </div>
-</div>
-<!-- service-area end -->
-@endif
+    @endif
 
-    <!-- fanfact-area start -->
-    <?php $Banner = DB::table('banners')->where('name','home')->where('section','counter')->get(); ?>
-    @foreach($Banner as $banner)
-    <div class="fanfact-area black-opacity" style="background: url({{url('/')}}/uploads/banners/{{$banner->image}}) no-repeat center center / cover">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-3 col-6">
-                    <div class="funfact-wrap wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
-                        <h2 class="counter">5</h2>
-                        <p>Years</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-3 col-6">
-                    <div class="funfact-wrap wow fadeInUp" data-wow-duration="700ms" data-wow-delay="600ms">
-                        <h2 class="counter"><?php $Projects =  DB::table('portfolio')->get();  ?> 60 </h2>
-                        <p>Projects</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-3 col-6">
-                    <div class="funfact-wrap wow fadeInUp" data-wow-duration="700ms" data-wow-delay="900ms">
-                        <h2 class="counter"><?php $Projects =  DB::table('clients')->get();   ?> 60</h2>
-                        <p>Clients</p>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-    @endforeach
-    <!-- fanfact-area end -->
+
     <!-- quote-area start -->
     <div class="quote-area">
         <div class="container">
@@ -326,27 +294,25 @@
     @if($Clients->isEmpty())
     @else
     <!-- Our Clients -->
-    <br><br>
-    <section class="section-50 section-sm-90 section-lg-top-120">
-     
-     
-        
+  
+   
+
+    <div class="brand-area brand-area2">
         <div class="container">
-          <section class="customer-logos slider">
-            
+           <div class="row">
             <?php $Clients = DB::table('clients')->get(); ?>
             @foreach($Clients as $clients)
-            <div class="slide"><img src="{{url('/')}}/uploads/clients/{{$clients->image}}"></div>
-            @endforeach
-            
-          </section>
+              <div class="col-lg-2 col-sm-4 col-3 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
+                 <div class="brand-wrap text-center">
+                    <img style="width:170px; height:120px; border:1px solid #000000" src="{{url('/')}}/uploads/clients/{{$clients->image}}" alt="{{$clients->name}}">
+                    <h6 style="max-width:180px; margin:0 auto; margin-top:5px; margin-bottom:5px; font-weight:600">{{$clients->name}}</h6>
+                 </div>
+              </div>
+             @endforeach
+              
+           </div>
         </div>
-       
-          
-       
-      
-    </section>	
-    <br><br>
-    @endif
+     </div>
+     @endif
 
 @endsection
