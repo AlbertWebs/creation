@@ -153,7 +153,7 @@
                     <div class="col-lg-4 col-sm-6 col-12">
                         <div class="footer-widget footer-logo">
                         @foreach($Sitesettings as $Settings)
-                            <img class="wow fadeIn" data-wow-duration="1s" data-wow-delay="200ms" src="{{url('/')}}/uploads/logo/{{$Settings->logo}}" alt="">
+                            <img class="wow fadeIn" data-wow-duration="1s" data-wow-delay="200ms" src="{{url('/')}}/uploads/logo/{{$Settings->logo}}" alt="Interior Designer In Kenya">
                             <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="600ms">Creation office Fitouts is the number one interior design firm, in Nairobi, Kenya.</p>
                             <h4>Working Hours: </h4>
                             <span>Mon - Sat 8:00 - 19:00 (Sunday:Closed)</span>

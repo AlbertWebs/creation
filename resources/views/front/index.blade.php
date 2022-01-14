@@ -6,7 +6,7 @@
                @foreach($Slider as $slider)
                 <div class="slider-items">
                     {{-- 1920 by 771 --}}
-                    <img src="{{url('/')}}/uploads/slider/{{$slider->image}}" alt="Creation Office Fitouts" class="slider">
+                    <img src="{{url('/')}}/uploads/slider/{{$slider->image}}" alt="Interior Designer - Creation Office Fitouts" class="slider">
                     <div class="slider-content">
                         <div class="container">
                             <div class="row">
@@ -65,7 +65,7 @@
            <div class="row">
               <div class="col-lg-6 d-lg-block d-none ">
                  <div class="spacial-img">
-                    <img src="{{asset('theme/assets/images/spacial/1.jpg')}}" alt="">
+                    <img src="{{asset('theme/assets/images/spacial/1.jpg')}}" alt="Interior Designer In Nairobi, Kenya">
                  </div>
               </div>
               <div class="col-lg-6 col-12">
@@ -121,7 +121,7 @@
                @foreach($Portfolio as $portfolio)
                <div class="col-lg-4 col-sm-6 col-12 project wow fadeInUp" data-wow-duration="700ms" data-wow-delay="{{$countP}}00ms">
                     <div class="project-wrap">
-                        <img src="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}" alt="">
+                        <img src="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}" alt="{{$portfolio->title}} - Creation Office Fitouts">
                         <div class="project-content">
                             <a href="{{url('/')}}/portfolio/{{$portfolio->slung}}"><i class="fa fa-search"></i></a>
                             <h3 style="color:#ffffff">{{$portfolio->title}}</h3>
