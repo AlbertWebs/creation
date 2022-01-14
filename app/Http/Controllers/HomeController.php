@@ -70,11 +70,11 @@ class HomeController extends Controller
     { 
         SEOMeta::setTitle('Best Office Fitouts Contractor in Kenya - Creation Office Fitouts - Interior designer in kenya');
         SEOMeta::setDescription('Interior Design Company in Nairobi - We are an Interior fitting contractor in Nairobi, Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
-        SEOMeta::setCanonical('https://creationltd.co.ke/');
+        SEOMeta::setCanonical(''.url('/').'/');
 
         OpenGraph::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
         OpenGraph::setTitle('Creation Office Fitouts - Best office fitouts contractor in Kenya, Interior designer in kenya');
-        OpenGraph::setUrl('https://creationltd.co.ke/');
+        OpenGraph::setUrl(''.url('/').'/');
         OpenGraph::addProperty('type', 'articles');
         $SiteSettings = DB::table('sitesettings')->get();
         
@@ -106,11 +106,11 @@ class HomeController extends Controller
     {
         SEOMeta::setTitle('Projects - Creation Office Fitouts -Interior Designers in Nairobi');
         SEOMeta::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
-        SEOMeta::setCanonical('https://creationltd.co.ke/portfolio');
+        SEOMeta::setCanonical(''.url('/').'/portfolio');
 
         OpenGraph::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
         OpenGraph::setTitle('Projects - Creation Office Fitouts -Interior Designers in Nairobi');
-        OpenGraph::setUrl('https://creationltd.co.ke/portfolio');
+        OpenGraph::setUrl(''.url('/').'/portfolio');
         OpenGraph::addProperty('type', 'articles');
         $SiteSettings = DB::table('sitesettings')->get();
         
@@ -129,11 +129,11 @@ class HomeController extends Controller
             $PagerTitle = $portfolioname->title;
             SEOMeta::setTitle(''.$portfolioname->title.' - Creation Office Fitouts - Best office fitouts in Kenya');
             SEOMeta::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
-            SEOMeta::setCanonical('https://creationltd.co.ke/portfolio/'.$name.'');
+            SEOMeta::setCanonical(''.url('/').'/portfolio/'.$name.'');
 
             OpenGraph::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
             OpenGraph::setTitle(''.$portfolioname->title.' - Creation Office Fitouts - Best office fitouts in Kenya');
-            OpenGraph::setUrl('https://creationltd.co.ke/portfolio/'.$name.'');
+            OpenGraph::setUrl(''.url('/').'/portfolio/'.$name.'');
             OpenGraph::addProperty('type', 'articles');
             $SiteSettings = DB::table('sitesettings')->get();
         
@@ -152,11 +152,11 @@ class HomeController extends Controller
     {
         SEOMeta::setTitle('Contact Us | Creation Office Fitouts - Interior Designer in Nairobi');
         SEOMeta::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
-        SEOMeta::setCanonical('https://creationltd.co.ke/contact');
+        SEOMeta::setCanonical(''.url('/').'/contact');
 
         OpenGraph::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
         OpenGraph::setTitle('Contact Us | Creation Office Fitouts - Interior Designer in Nairobi');
-        OpenGraph::setUrl('https://creationltd.co.ke/contact');
+        OpenGraph::setUrl(''.url('/').'/contact');
         OpenGraph::addProperty('type', 'articles');
         $SiteSettings = DB::table('sitesettings')->get();
         
@@ -172,11 +172,11 @@ class HomeController extends Controller
     {
         SEOMeta::setTitle('About Us | Best office fitouts contractor in Kenya  |  Creation Office Fitouts');
         SEOMeta::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
-        SEOMeta::setCanonical('https://creationltd.co.ke/about');
+        SEOMeta::setCanonical(''.url('/').'/about');
 
         OpenGraph::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
         OpenGraph::setTitle('About Us | Best office fitouts contractor in Kenya  |  Creation Office Fitouts');
-        OpenGraph::setUrl('https://creationltd.co.ke/about');
+        OpenGraph::setUrl(''.url('/').'/about');
         OpenGraph::addProperty('type', 'articles');
         $SiteSettings = DB::table('sitesettings')->get();
         
@@ -197,11 +197,11 @@ class HomeController extends Controller
     {
         SEOMeta::setTitle('Terms and Conditions | Creation Office Fitouts - Best office fitouts contractor in Kenya');
         SEOMeta::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
-        SEOMeta::setCanonical('https://creationltd.co.ke/terms');
+        SEOMeta::setCanonical(''.url('/').'/terms');
 
         OpenGraph::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
         OpenGraph::setTitle('Terms and Conditions | Creation Office Fitouts - Best office fitouts contractor in Kenya');
-        OpenGraph::setUrl('https://creationltd.co.ke/terms');
+        OpenGraph::setUrl(''.url('/').'/terms');
         OpenGraph::addProperty('type', 'articles');
         $SiteSettings = DB::table('sitesettings')->get();
         
@@ -216,11 +216,11 @@ class HomeController extends Controller
     {
         SEOMeta::setTitle('Privacy Policy | Creation Office Fitouts - Best office fitouts contractor in Kenya');
         SEOMeta::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
-        SEOMeta::setCanonical('https://creationltd.co.ke/privacy');
+        SEOMeta::setCanonical(''.url('/').'/privacy');
 
         OpenGraph::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
         OpenGraph::setTitle('Privacy Policy | Creation Office Fitouts - Best office fitouts contractor in Kenya');
-        OpenGraph::setUrl('https://creationltd.co.ke/privacy');
+        OpenGraph::setUrl(''.url('/').'/privacy');
         OpenGraph::addProperty('type', 'articles');
         $SiteSettings = DB::table('sitesettings')->get();
         
@@ -235,11 +235,11 @@ class HomeController extends Controller
     {
         SEOMeta::setTitle('Copyright Statement | Creation Office Fitouts - Best office fitouts contractor in Kenya');
         SEOMeta::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
-        SEOMeta::setCanonical('https://creationltd.co.ke/copyright');
+        SEOMeta::setCanonical(''.url('/').'/copyright');
 
         OpenGraph::setDescription('Interior Design Company in Nairobi - We are an interior design firm, based in Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
         OpenGraph::setTitle('Copyright Statement | Creation Office Fitouts - Best office fitouts contractor in Kenya');
-        OpenGraph::setUrl('https://creationltd.co.ke/copyright');
+        OpenGraph::setUrl(''.url('/').'/copyright');
         OpenGraph::addProperty('type', 'articles');
         $SiteSettings = DB::table('sitesettings')->get();
         
@@ -255,11 +255,11 @@ class HomeController extends Controller
     {
         SEOMeta::setTitle('Services | Creation Office Fitouts - Best Interior fitting contractor in Nairobi');
         SEOMeta::setDescription('Interior Design Company in Nairobi - Interior Architecture , Construction, Refurbishment, Partitioning , Ceiling & Floors, Furniture Supplies');
-        SEOMeta::setCanonical('https://creationltd.co.ke/services');
+        SEOMeta::setCanonical(''.url('/').'/services');
 
         OpenGraph::setDescription('Interior Design Company in Nairobi - Interior Architecture , Construction, Refurbishment, Partitioning , Ceiling & Floors, Furniture Supplies');
         OpenGraph::setTitle('Services | Creation Office Fitouts - Best Interior fitting contractor in Nairobi');
-        OpenGraph::setUrl('https://creationltd.co.ke/services');
+        OpenGraph::setUrl(''.url('/').'/services');
         OpenGraph::addProperty('type', 'articles');
         $SiteSettings = DB::table('sitesettings')->get();
         
@@ -279,11 +279,11 @@ class HomeController extends Controller
             
             SEOMeta::setTitle(''.$page_title.' | Contractor in Kenya');
             SEOMeta::setDescription('Interior Design Company in Nairobi - Interior Architecture , Construction, Refurbishment, Partitioning , Ceiling & Floors, Furniture Supplies');
-            SEOMeta::setCanonical('https://creationltd.co.ke/services/'.$slung.'');
+            SEOMeta::setCanonical(''.url('/').'/services/'.$slung.'');
 
             OpenGraph::setDescription('Interior Design Company in Nairobi - Interior Architecture , Construction, Refurbishment, Partitioning , Ceiling & Floors, Furniture Supplies');
             OpenGraph::setTitle(''.$page_title.' | Contractor in Kenya');
-            OpenGraph::setUrl('https://creationltd.co.ke/services/'.$slung.'');
+            OpenGraph::setUrl(''.url('/').'/services/'.$slung.'');
             OpenGraph::addProperty('type', 'articles');
 
             $SiteSettings = DB::table('sitesettings')->get();
