@@ -68,7 +68,7 @@ class HomeController extends Controller
 
     public function index()
     { 
-        SEOMeta::setTitle('Best Office Fitouts Contractor in Kenya - Creation Office Fitouts - Interior designer in kenya');
+        SEOMeta::setTitle('Best Office Fitouts Contractor in Kenya - Creation Office Fitouts');
         SEOMeta::setDescription('Interior Design Company in Nairobi - We are an Interior fitting contractor in Nairobi, Kenya.  We always endeavor to uphold the highest standards of art, design, planning, and project management while strictly adhering to the ethics and best practices for the benefit of our clients - Creation Office Fitouts');
         SEOMeta::setCanonical(''.url('/').'/');
 
