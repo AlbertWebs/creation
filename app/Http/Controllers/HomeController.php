@@ -68,17 +68,17 @@ class HomeController extends Controller
 
     public function index()
     { 
-        SEOMeta::setTitle('Best Office Fitouts Contractor in Kenya - Creation Office Fitouts');
-        SEOMeta::setDescription('Interior Design Company in Nairobi - We are an Interior fitting contractor in Nairobi - We are professionals in Construction, Refurbishments, Ceiling, Flooring');
+        SEOMeta::setTitle('Best Interior Design Contractor in Kenya - Creation Office Fitouts');
+        SEOMeta::setDescription('Best Office Fitouts Contractor in Kenya  - We are an Interior fitting contractor in Nairobi - We are professionals in Construction, Refurbishments, Ceiling, Flooring');
         SEOMeta::setCanonical(''.url('/').'/');
 
-        OpenGraph::setDescription('Interior Design Company in Nairobi - We are an Interior fitting contractor in Nairobi - We are professionals in Construction, Refurbishments, Ceiling, Flooring');
-        OpenGraph::setTitle('Creation Office Fitouts - Best office fitouts contractor in Kenya, Interior designer in kenya');
+        OpenGraph::setDescription('Best Office Fitouts Contractor in Kenya  - We are an Interior fitting contractor in Nairobi - We are professionals in Construction, Refurbishments, Ceiling, Flooring');
+        OpenGraph::setTitle('Best Interior Design Contractor in Kenya - Creation Office Fitouts');
         OpenGraph::setUrl(''.url('/').'/');
         OpenGraph::addProperty('type', 'articles');
         $SiteSettings = DB::table('sitesettings')->get();
         
-        TwitterCard::setTitle('Best Office Fitouts Contractor in Kenya - Creation Office Fitouts');
+        TwitterCard::setTitle('Best Interior Design Contractor in Kenya - Creation Office Fitouts');
         TwitterCard::setSite('@creationoffice1');
 
         
