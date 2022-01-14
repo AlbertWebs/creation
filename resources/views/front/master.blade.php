@@ -85,6 +85,7 @@
     <!--  -->
      <!--================Header Menu Area =================-->
      <header class="header_area" id="sticky-header">
+         <h1 style="display: none">Interior Designer in Nairobi, Kenya</h1>
            	<div class="top_menu">
            		<div class="">
            			<div class="top_inner">
@@ -112,7 +113,7 @@
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h wow fadeInUp" data-wow-duration="1s" data-wow-delay="100ms" href="{{url('/')}}"><img width="250" height="auto" src="{{url('/')}}/uploads/logo/{{$Settings->logo}}" alt=""><img width="200" height="auto" src="{{url('/')}}/uploads/logo/{{$Settings->logo}}" alt=""></a>
+						<a class="navbar-brand logo_h wow fadeInUp" data-wow-duration="1s" data-wow-delay="100ms" href="{{url('/')}}"><img width="250" height="auto" src="{{url('/')}}/uploads/logo/{{$Settings->logo}}" alt=""><img width="200" height="auto" src="{{url('/')}}/uploads/logo/{{$Settings->logo}}" alt="Creation Office Fitouts"></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
