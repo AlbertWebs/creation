@@ -11,11 +11,7 @@
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://creationltd.co.ke/news-updates</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  
   <url>
     <loc>https://creationltd.co.ke/portfolio</loc>
     <changefreq>yearly</changefreq>
@@ -61,6 +57,8 @@
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  
   <url>
     <loc>https://creationltd.co.ke/portfolio/pj-kakad-and-advocates</loc>
     <changefreq>yearly</changefreq>
@@ -107,7 +105,11 @@
     <priority>1.0</priority>
   </url>
   
-
+<url>
+    <loc>https://creationltd.co.ke/news-updates</loc>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
   <url>
     <loc>https://creationltd.co.ke/portfolio/westside-towers</loc>
