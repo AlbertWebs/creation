@@ -291,6 +291,7 @@
             });
         });
     </script>
+    @include('front.schema')
 </body>
 
 </html>
