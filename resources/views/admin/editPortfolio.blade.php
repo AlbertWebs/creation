@@ -306,6 +306,10 @@
                     <input type="hidden" name="image_three_cheat" value="{{$Portfolio->image_three}}">
                     <input type="hidden" name="image_four_cheat" value="{{$Portfolio->image_four}}">
                     <input type="hidden" name="image_five_cheat" value="{{$Portfolio->image_five}}">
+                    <input type="hidden" name="image_six_cheat" value="{{$Portfolio->image_six}}">
+                    <input type="hidden" name="image_seven_cheat" value="{{$Portfolio->image_seven}}">
+                    <input type="hidden" name="image_eight_cheat" value="{{$Portfolio->image_eight}}">
+                    <input type="hidden" name="image_nine_cheat" value="{{$Portfolio->image_nine}}">
                     
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     

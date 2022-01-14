@@ -61,7 +61,7 @@
 	</script>
 	<!--End of Tawk.to Script--> 
    
-    <script type="text/javascript" id="cookieinfo"
+    {{-- <script type="text/javascript" id="cookieinfo"
         src="//cookieinfoscript.com/js/cookieinfo.min.js"
         data-bg="#32415C"
         data-fg="#FFFFFF"
@@ -69,7 +69,7 @@
         data-cookie="CookieInfoScript"
         data-text-align="left"
         data-close-text="Got it!">
-    </script>
+    </script> --}}
 
 
 </head>

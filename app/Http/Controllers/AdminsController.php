@@ -79,6 +79,8 @@ use App\Quote;
 use App\ServiceRequest;
 
 use App\File;
+
+use Illuminate\Support\Str;
  
 use App\Client;
 class AdminsController extends Controller
@@ -1732,10 +1734,11 @@ public function add_Portfolio(Request $request){
     }else{
         $image_twelve = $request->pro_img_cheat;
     }
-
+    
 
     $Portfolio = new Portfolio;
     $Portfolio->title = $request->name;
+    $Portfolio->slung = Str::slug($request->name);
     $Portfolio->content = $request->content;
     $Portfolio->client = $request->client;
     $Portfolio->cat = $request->cat;
@@ -2021,9 +2024,10 @@ public function edit_Portfolio(Request $request, $id){
     }
 
    
-
+    $slung = Str::slug($request->name);
     $updateDetails = array(
         'title' => $request->name,
+        'slung' => Str::slug($request->name),
         'content' => $request->content,
         'service' => $request->service,
         'client' => $request->client,
