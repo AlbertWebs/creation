@@ -24,39 +24,38 @@
     </div>
     @endforeach
     <!-- breadcumb-area end -->
-    <!-- blog-area start -->
-    <div class="blog-area blog-details-area">
+
+    {{--  --}}
+    <div class="about-area3 ptb-120">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    
-                    <div class="blog-details-wrap">
-                        <p>{!!html_entity_decode($Services->content)!!}</p>
-                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <aside class="sidebar-wrap">
-                      
-                        <div class="widget sidebar-menu">
-                            <h3 class="widget-title">Other Services</h3>
-                            <ul>
-                                <?php $Services = DB::table('services')->inRandomOrder()->get(); ?>
-                                @foreach($Services as $Service)
-                                <li><a href="{{url('/')}}/service/{{$Service->id}}">{{$Service->title}}</a></li>
-                                @endforeach
-                                
-                            </ul>
-                        </div>
-                       
-                        
-                    </aside>
-                </div>
-            </div>
+           
+           
+           <div class="row revarce-wrap">
+              <div class="col-md-6" style="box-shadow: 0px 2px 10px rgb(0 0 0 / 20%);">
+                 <div class="about-wrap3 about-wrap-2" >
+                    <h2>{{$Services->title}}</h2>
+                    {{-- <h3>We Are The Best Architecture & Interior Designer in 1988</h3> --}}
+                    <p>{!!html_entity_decode($Services->content)!!}</p>
+                    <a href="{{url('/')}}/contact" class="readmore-btn">Get Quote</a>
+                 </div>
+              </div>
+              <div class="col-md-6">
+                 <div class="about-img3" >
+                    <img style="width:100% !important" src="{{url('/')}}/uploads/services/{{$Services->image_one}}" alt="{{$Services->title}}">
+                 </div>
+              </div>
+           </div>
         </div>
-    </div>
+     </div>
+
+    {{--  --}}
     <!-- blog-area end -->
+    
+    <!-- quote-area start -->
+@include('front.interior')
+    <!-- quote-area end -->   
     <br><br>
-    <section class="section-50 section-sm-90 section-lg-top-120">
+    <section class="section-50 section-sm-90 section-lg-top-120 ">
      
      
         
@@ -75,9 +74,6 @@
        
       
     </section>	
-    <br><br>
-    <!-- quote-area start -->
-@include('front.interior')
-    <!-- quote-area end -->     
+    <br><br>  
 
 @endsection
