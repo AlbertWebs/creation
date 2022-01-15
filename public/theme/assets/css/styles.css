@@ -293,7 +293,7 @@
  .quote-wrap a{display:inline-block;padding:10px 25px;background:#222;color:#fff;text-transform:uppercase;font-weight:500;}
  .quote-wrap a:hover{background:#fff;color:#222;}
  .interior-area{background:#32415C;position:relative;padding:130px 0px;overflow:hidden;}
- .interior-img{position:absolute;right:0;width:50%;top:0;height:100%;background:url(../images/bg/3.jpg) no-repeat center center/cover;}
+ .interior-img{position:absolute;right:0;width:50%;top:0;height:100%;background:url(../images/bg/creationInpiredBanner.jpg) no-repeat center center/cover;}
  .interior-img img{visibility:hidden;}
  .interior-wrap{padding-right:30px;}
  .interior-wrap span{display:block;margin-bottom:15px;}

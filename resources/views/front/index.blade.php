@@ -51,8 +51,10 @@
     </div>
     <!-- ablout-area end -->
 
+    @include('front.interior')
+
     {{--  --}}
-    <div class="spacial-area ptb-120 bg-1">
+    {{-- <div class="spacial-area ptb-120 bg-1">
         <div class="container">
            <div class="row">
               <div class="col-12">
@@ -101,7 +103,7 @@
               </div>
            </div>
         </div>
-     </div>
+     </div> --}}
     {{--  --}}
  
     <!-- .project-area start -->

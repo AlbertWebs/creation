@@ -1,7 +1,7 @@
 
     <div class="interior-area">
         <div class="interior-img">
-           <img src="assets/images/bg/3.jpg" alt="">
+           <img src="{{url('/')}}/uploads/banners/creationInpiredBanner.jpg" alt="Creation Office Fitouts">
         </div>
         <div class="interior">
            <div class="container">

@@ -10,7 +10,7 @@ use Mail;
 
 class ReplyMessage extends Model
 {
-    public static function SendMessage($body,$subject,$name,$to,$id){
+    public static function SendMessage($body,$subject,$name,$to,$id,$from){
       //The Generic mailler Goes here
       $data = array(
         'name'=>$name,
@@ -21,8 +21,8 @@ class ReplyMessage extends Model
     $appEmail = config('mail.username');
  
  
-    $FromVariable = $appEmail;
-    $FromVariableName = $appName;
+    $FromVariable = $from;
+    $FromVariableName = $name;
 
     $toVariable = $to;
     $toVariableName = $name;
@@ -30,7 +30,7 @@ class ReplyMessage extends Model
 
     Mail::send('mail', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName){
         $message->from($FromVariable , $FromVariableName);
-        $message->to($toVariable, $toVariableName)->cc('henry@creationltd.co.ke')->cc('info@creationltd.co.ke')->cc('joan@creationltd.co.ke')->subject($subject);
+        $message->to($toVariable, $toVariableName)->cc('henry@creationltd.co.ke')->cc('info@creationltd.co.ke')->bcc('albertmuhatia@gmail.com')->replyto($FromVariable)->subject($subject);
     
 });
   $updateDetail = array(

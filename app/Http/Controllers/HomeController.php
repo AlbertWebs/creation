@@ -117,7 +117,7 @@ class HomeController extends Controller
         TwitterCard::setTitle('Projects - Creation Office Fitouts -Interior Designers in Nairobi');
         TwitterCard::setSite('@creationoffice1');
 
-        $Portfolio = Portfolio::all();
+        $Portfolio = DB::table('portfolio')->orderByDesc('id')->get();
         $page_title = 'Our Works';
         return view('front.portfolio',compact('Portfolio','page_title'));
     }
@@ -391,33 +391,39 @@ class HomeController extends Controller
         return view('front.commingsoon',compact('page_title'));
     }
     public function submitMessage(Request $request){
-        $email = $request->email;
-        $name = $request->name;
-        $message = $request->message;
-        $subject = $request->subject;
+        if(!empty($request->input('checkmate'))) {
+            Session::flash('message', "Your Message Has Been Sent");
+            return Redirect::back();
+        }else{
+            $from = $request->email;
+            $name = $request->name;
+            $message = $request->message;
+            $subject = $request->subject;
+            
+            $Message = new Message;
+            $Message->name = $name;
+            $Message->email = $from;
+            $Message->subject = $subject;
+            $Message->content = $message;
+    
+            $Message->save();
+            $Notifications = new Notifications;
+            $Notifications->type = 'Message';
+            $Notifications->content = 'You have a new Message';
+            $Notifications->save();
+    
+            $reply = 'You have Received a Message From Creations Office Fitouts, Login To the admins Panel to reply';
+            $name = 'Admin';
+            $id = 0;
+            
+            $email = 'info@creationltd.co.ke';
+    
+            ReplyMessage::SendMessage($message,$subject,$name,$email,$id,$from);
+    
+            Session::flash('message', "Your Message Has Been Sent");
+            return Redirect::back();
+        }
         
-        $Message = new Message;
-        $Message->name = $name;
-        $Message->email = $email;
-        $Message->subject = $subject;
-        $Message->content = $message;
-
-        $Message->save();
-        $Notifications = new Notifications;
-        $Notifications->type = 'Message';
-        $Notifications->content = 'You have a new Message';
-        $Notifications->save();
-
-        $reply = 'You have Received a Message From Creations Office Fitouts, Login To the admins Panel to reply';
-        $name = 'Admin';
-        $id = 0;
-        
-        $email = 'info@creationltd.co.ke';
-        $subject = 'New Message';
-        ReplyMessage::SendMessage($reply,$subject,$name,$email,$id);
-
-        Session::flash('message', "Your Message Has Been Sent");
-        return Redirect::back();
     }
 
     public function slung(){

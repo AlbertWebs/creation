@@ -34,9 +34,11 @@
                         <form action="{{url('/submitMessage')}}" method="post">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <div class="row">
+                                
                                 <div class="col-md-6 col-12">
                                     <input type="text" placeholder="Name" id="fname" name="name">
                                 </div>
+                                <input style="display: none" type="text" name="checkmate">
                                 <div class="col-md-6 col-12">
                                     <input type="text" placeholder="Email" id="email" name="email">
                                 </div>
@@ -46,6 +48,12 @@
                                 <div class="col-12">
                                     <textarea class="contact-textarea" placeholder="Message" id="msg" name="message"></textarea>
                                 </div>
+                                {{--  --}}
+                                <div class="col-lg-12 col-md-12" id="TheCapcha">
+                                    <div class="g-recaptcha" data-sitekey="6LcdKhQeAAAAAHbljXhOgo9_WHQE7LQnRMe7LgSO" data-callback="correctCaptcha"></div>
+                                    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+                                </div>
+                                {{--  --}}
                                 <div class="col-12">
                                     <button type="submit" id="submit" class="cont-submit btn-contact btn-style" name="submit"><i class="fa fa-send"></i> SEND MESSAGE</button>
                                 </div>
