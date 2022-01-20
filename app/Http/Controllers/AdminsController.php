@@ -1483,6 +1483,7 @@ public function deleteService($id){
 }
 
 public function addPortfolio(){
+    
     $page_title = 'formfiletext';//For Layout Inheritance
     $page_name = 'add Portfolio';
     return view('admin.addPortfolio',compact('page_title','page_name'));
