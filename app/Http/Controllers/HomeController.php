@@ -89,7 +89,7 @@ class HomeController extends Controller
         $Slider = Slider::all();
         $Blog = DB::table('blog')->paginate(3);
         $Portfolio = DB::table('portfolio')->orderByDesc('id')->paginate(9);
-        $Services = DB::table('services')->inRandomOrder()->paginate(6);
+        $Services = DB::table('services')->paginate(6);
         $Testimonial = Testimonial::all();
         $Clients = DB::table('clients')->inRandomOrder()->paginate(20);
         $SiteSettings = DB::table('sitesettings')->get();
