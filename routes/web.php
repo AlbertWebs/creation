@@ -29,6 +29,8 @@ Route::get('/services/{name}','HomeController@service');
 Route::get('/portfolio/{id}','HomeController@portfolio_plus');
 
 Route::get('/about','HomeController@about');
+Route::get('/is-null','HomeController@isNull');
+
 
 Route::get('/slungify','HomeController@slung');
 

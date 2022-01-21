@@ -91,7 +91,7 @@ class HomeController extends Controller
         $Portfolio = DB::table('portfolio')->orderByDesc('id')->paginate(9);
         $Services = DB::table('services')->paginate(6);
         $Testimonial = Testimonial::all();
-        $Clients = DB::table('clients')->inRandomOrder()->paginate(20);
+        $Clients = DB::table('clients')->inRandomOrder()->paginate(30);
         $SiteSettings = DB::table('sitesettings')->get();
        
         $sitename = config('app.name', 'Laravel');
@@ -437,4 +437,18 @@ class HomeController extends Controller
         }
         echo "done";
     }
+
+    public function isNull(){
+        $Clients = DB::table('clients')->get();
+        foreach ($Clients as $key => $value) {
+            # code...
+            if($value->orders == null){
+                $updateDetails = array(
+                    'orders'=>'10',
+                );
+            DB::table('clients')->where('id',$value->id)->update($updateDetails);
+            }
+        }
+    }
+
 }

@@ -303,7 +303,7 @@
     <div class="brand-area brand-area2">
         <div class="container" >
            <div class="row">
-            <?php $Clients = DB::table('clients')->limit(30)->get(); ?>
+            <?php $Clients = DB::table('clients')->orderBy('orders','ASC')->limit(30)->get(); ?>
             @foreach($Clients as $clients)
               <div class="col-lg-2 col-sm-4 col-3 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms" style="margin:0 auto;">
                  <div class="brand-wrap text-center">
