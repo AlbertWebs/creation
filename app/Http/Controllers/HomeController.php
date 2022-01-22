@@ -183,7 +183,7 @@ class HomeController extends Controller
         TwitterCard::setTitle('About Us | Best office fitouts contractor in Kenya  |  Creation Office Fitouts');
         TwitterCard::setSite('@creationoffice1');
 
-        $Clients = DB::table('clients')->inRandomOrder()->paginate(20);
+        $Clients = DB::table('clients')->orderBy('orders','ASC')->paginate(50);
         $Testimonial = Testimonial::all();
         $Admin = Admin::all();
         $About = DB::table('about')->get(); 

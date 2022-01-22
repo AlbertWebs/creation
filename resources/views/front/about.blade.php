@@ -166,7 +166,7 @@
         <div class="container">
           <section class="customer-logos slider">
             
-            <?php $Clients = DB::table('clients')->get(); ?>
+            <?php $Clients = DB::table('clients')->orderBy('orders','ASC')->get(); ?>
             @foreach($Clients as $clients)
             <div class="slide"><img src="{{url('/')}}/uploads/clients/{{$clients->image}}"></div>
             @endforeach
