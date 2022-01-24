@@ -307,7 +307,7 @@
             @foreach($Clients as $clients)
               <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms" style="margin:0 auto;">
                  <div class="brand-wrap text-center">
-                    <img style="width:170px; height:120px; border:1px solid #000000" src="{{url('/')}}/uploads/clients/{{$clients->image}}" alt="{{$clients->name}}">
+                    <img style="width:170px; height:120px;" src="{{url('/')}}/uploads/clients/{{$clients->image}}" alt="{{$clients->name}}">
                     <h6 style="max-width:180px; margin:0 auto; margin-top:5px; margin-bottom:5px; font-weight:600">{{$clients->name}}</h6>
                  </div>
               </div>
