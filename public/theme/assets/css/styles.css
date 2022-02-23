@@ -630,3 +630,9 @@
  .project-wrap{
      border:5px solid #3c5a99;
  }
+
+ @media (max-width:720px){
+    .line{
+       display:none;
+    }
+}
