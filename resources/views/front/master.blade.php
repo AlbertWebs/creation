@@ -86,8 +86,8 @@
 <?php $Sitesettings = DB::table('sitesettings')->get(); ?>
 <body>
 <!--CSS Spinner-->
-<div class="spinner-wrapper">
-<div class="spinner"></div>
+{{-- <div class="spinner-wrapper">
+<div class="spinner"></div> --}}
 </div>
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
