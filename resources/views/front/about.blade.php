@@ -168,7 +168,7 @@
             
             <?php $Clients = DB::table('clients')->orderBy('orders','ASC')->get(); ?>
             @foreach($Clients as $clients)
-            <div class="slide"><img src="{{url('/')}}/uploads/clients/{{$clients->image}}"></div>
+            <div class="slide"><img style="width:170px; height:120px; border:2px solid #D3D3D3" src="{{url('/')}}/uploads/clients/{{$clients->image}}"></div>
             @endforeach
             
           </section>

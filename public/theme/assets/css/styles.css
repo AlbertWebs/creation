@@ -142,7 +142,7 @@
  .line:before,
  .line:after,
  .blog-wrap2:before,
- .blog-wrap2:after{position:absolute;left:0;top:0;width:0;height:0;background:transparent;border:10px solid transparent;content:"";z-index:-9;}
+ .blog-wrap2:after{position:absolute;left:0;top:0;width:0;height:0;background:transparent;border:0px solid transparent;content:"";z-index:-9;}
  .next-prev-style .owl-item.active .line:before,
  .blog-wrap2:hover:before{-webkit-animation:animate 1s linear forwards;animation:animate 1s linear forwards;}
  @-webkit-keyframes animate{0%{width:0;height:0;border-top-color:#32415C;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;}
@@ -636,3 +636,4 @@
        display:none;
     }
 }
+

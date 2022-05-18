@@ -86,9 +86,9 @@ class HomeController extends Controller
         
 
         $About = DB::table('about')->get();
-        $Slider = Slider::all();
+        $Slider = Slider::where('home','1')->orderby('action','ASC')->get();
         $Blog = DB::table('blog')->paginate(3);
-        $Portfolio = DB::table('portfolio')->orderByDesc('id')->paginate(10);
+        $Portfolio = DB::table('portfolio')->orderByDesc('id')->paginate(7);
         $Services = DB::table('services')->paginate(6);
         $Testimonial = Testimonial::all();
         $Clients = DB::table('clients')->inRandomOrder()->paginate(30);
@@ -99,6 +99,40 @@ class HomeController extends Controller
         return view('front.index',compact('About','SiteSettings','page_title','Testimonial','Slider','Services','Portfolio','Clients'));
     }
 
+    public function clients()
+    { 
+        SEOMeta::setTitle('Interior Designer in Kenya | Creation Office Fitouts | Clients');
+        SEOMeta::setDescription('Best Office Fitouts Contractor in Kenya  - We are an Interior fitting contractor in Nairobi - We are professionals in Construction, Refurbishments, Ceiling, Flooring');
+        SEOMeta::setCanonical(''.url('/').'/');
+
+        OpenGraph::setDescription('Best Office Fitouts Contractor in Kenya  - We are an Interior fitting contractor in Nairobi - We are professionals in Construction, Refurbishments, Ceiling, Flooring');
+        OpenGraph::setTitle('nterior Designer in Kenya | Creation Office Fitouts | Clients');
+        OpenGraph::setUrl(''.url('/').'/');
+        OpenGraph::addProperty('type', 'articles');
+        $SiteSettings = DB::table('sitesettings')->get();
+        
+        TwitterCard::setTitle('nterior Designer in Kenya | Creation Office Fitouts | Clients');
+        TwitterCard::setSite('@creationoffice1');
+
+        
+        
+        
+
+        $About = DB::table('about')->get();
+        $Slider = Slider::all();
+        $Blog = DB::table('blog')->paginate(3);
+        $Portfolio = DB::table('portfolio')->orderByDesc('id')->paginate(7);
+        $Services = DB::table('services')->paginate(6);
+        $Testimonial = Testimonial::all();
+        $Clients = DB::table('clients')->inRandomOrder()->paginate(30);
+        $SiteSettings = DB::table('sitesettings')->get();
+       
+        $sitename = config('app.name', 'Laravel');
+        $page_title = 'Welcome To '.$sitename.'';
+        return view('front.clients',compact('About','SiteSettings','page_title','Testimonial','Slider','Services','Portfolio','Clients'));
+    }
+
+    
    
    
 

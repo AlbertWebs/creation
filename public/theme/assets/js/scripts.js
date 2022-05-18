@@ -331,20 +331,20 @@
     });
 
 
-    // slicknav
+    // slicknav:creations
     $('ul#navigation').slicknav({
         prependTo: ".responsive-menu-wrap"
     });
 
     $('.grid').imagesLoaded(function() {
 
-        // filter items on button click
+        // filter items on button click:creations
         $('.project-menu').on('click', 'button', function() {
             var filterValue = $(this).attr('data-filter');
             $grid.isotope({ filter: filterValue });
         });
 
-        // init Isotope
+        // init Isotope:creations
         var $grid = $('.grid').isotope({
             itemSelector: '.project',
             percentPosition: true,
@@ -416,6 +416,7 @@
         var subject = $('#subject').val();
         var email = $('#email').val();
         var msg = $('#msg').val();
+        // Re-Validate Here:Creations
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
         if (!regex.test(email)) {

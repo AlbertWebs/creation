@@ -138,11 +138,12 @@
                                 <li class="nav-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms"><a class="nav-link" href="{{url('/about')}}">About</a></li> 
                                 <li class="nav-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="400ms"><a class="nav-link" href="{{url('/services')}}">Services</a></li> 
                                 <li class="nav-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="500ms"><a class="nav-link" href="{{url('/portfolio')}}">Projects</a></li>
+                                <li class="nav-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="500ms"><a class="nav-link" href="{{url('/clients')}}">Clients</a></li>
                                 <?php $Profile = DB::table('files')->get(); ?>
                                 @foreach($Profile as $profile) 
 								<li class="nav-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="600ms"><a download class="nav-link" href="{{url('/')}}/uploads/files/{{$profile->file}}"><i class="fa fa-download"></i> Profile</a></li>
 								@endforeach
-                                <li class="nav-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="700ms"><a class="nav-link" href="{{url('/')}}/news-updates"><i class="fa fa-info"></i> News Updates</a></li>
+                                {{-- <li class="nav-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="700ms"><a class="nav-link" href="{{url('/')}}/news-updates"><i class="fa fa-info"></i> News Updates</a></li> --}}
 								<li class="nav-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="700ms"><a class="nav-link" href="{{url('/contact')}}"><i class="fa fa-phone"></i> Contact</a></li>
 							</ul>
 						</div> 

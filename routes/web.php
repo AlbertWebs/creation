@@ -25,6 +25,8 @@ Route::get('/portfolio','HomeController@portfolio');
 Route::get('/portfolio/{name}','HomeController@portfolio_single');
 Route::get('/contact','HomeController@contact');
 Route::get('/services','HomeController@services');
+Route::get('/clients','HomeController@clients');
+
 Route::get('/services/{name}','HomeController@service');
 Route::get('/portfolio/{id}','HomeController@portfolio_plus');
 
