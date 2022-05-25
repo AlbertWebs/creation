@@ -4,7 +4,7 @@
     <div class="slider-area slider-area2">
             <div class="slider-active2 next-prev-style">
                @foreach($Slider as $slider)
-                <div class="slider-items">
+                <div class="slider-items slider-height">
                     {{-- 1920 by 771 --}}
                     <img src="{{url('/')}}/uploads/slider/{{$slider->image}}" alt="Interior Designer - Creation Office Fitouts" class="slider">
                     <div class="slider-content">
@@ -305,7 +305,7 @@
            <div class="row">
             <?php $Clients = DB::table('clients')->orderBy('orders','ASC')->limit(18)->get(); ?>
             @foreach($Clients as $clients)
-              <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms" style="margin:0 auto;">
+              <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 col-6 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms" style="margin:0 auto;">
                  <div class="brand-wrap text-center">
                     <img style="width:170px; height:120px; border:2px solid #D3D3D3" src="{{url('/')}}/uploads/clients/{{$clients->image}}" alt="{{$clients->name}}">
                     <h6 style="max-width:180px; margin:0 auto; margin-top:5px; margin-bottom:5px; font-weight:600">{{$clients->name}}</h6>

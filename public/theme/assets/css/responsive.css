@@ -195,3 +195,16 @@ ul.slick-dots{left:30px;}
 .slider-items{height:450px;}
 .brand-wrap{width:100%;height:auto;}
 }
+.header_area .navbar .nav .nav-item .nav-link {
+    /* color:#32415C; */
+    font-weight: 900 !important;
+    text-shadow: 1px 1px 1px #32415C;
+}
+ /* Mobile */
+ @media(max-width:720px){
+    .slider-height{height: 620px;}
+    .header_area .navbar .nav .nav-item .nav-link {
+        color:#32415C;
+        font-weight: 900 !important;
+    }
+ }
