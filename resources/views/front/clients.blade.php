@@ -1,7 +1,7 @@
 @extends('front.master')
 @section('content')
 
- 
+ <br><br>
 
 
 

@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="breadcumb-wrap">
-                        <h2>About Us</h2>
+                        <h2 style="visibility:hidden">About Us</h2>
                         <ul>
                             <li><a href="{{url('/')}}">Home</a></li>
                             <li>/</li>

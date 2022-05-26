@@ -205,6 +205,20 @@ ul.slick-dots{left:30px;}
     .slider-height{height: 620px;}
     .header_area .navbar .nav .nav-item .nav-link {
         color:#32415C;
-        font-weight: 900 !important;
+        font-weight:lighter !important;
+    }
+    .slider-area{
+        height: 620px;
+    }
+    .slider-height{height: 620px;}
+    .slider-content h3 {
+        font-size: 20px;
+    }
+    .breadcumb-wrap h2{
+        visibility:hidden
     }
  }
+
+ .breadcumb-wrap h2{
+    visibility:hidden
+}
