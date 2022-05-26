@@ -132,6 +132,19 @@
                 </div>
                 <?php $countP++ ?>
                 @endforeach
+                <?php $Folio =  DB::table('portfolio')->where('id','13')->paginate(9); ?>
+                @foreach($Folio as $portfolio)
+                <div class="col-lg-4 col-sm-6 col-12 project wow fadeInUp" data-wow-duration="700ms" data-wow-delay="{{$countP}}00ms">
+                    <div class="project-wrap">
+                        <img src="{{url('/')}}/uploads/portfolio/{{$portfolio->image_six}}" alt="{{$portfolio->title}} - Creation Office Fitouts">
+                        <div class="project-content">
+                            <a href="{{url('/')}}/portfolio/{{$portfolio->slung}}"><i class="fa fa-search"></i></a>
+                            <h3 style="color:#ffffff">{{$portfolio->title}}</h3>
+                        </div>
+                    </div>
+                </div>
+                <?php $countP++ ?>
+                @endforeach
             </div>
         </div>
     </div>
@@ -303,7 +316,7 @@
     <div class="brand-area brand-area2">
         <div class="container" >
            <div class="row">
-            <?php $Clients = DB::table('clients')->orderBy('orders','ASC')->limit(18)->get(); ?>
+            <?php $Clients = DB::table('clients')->orderBy('orders','ASC')->limit(12)->get(); ?>
             @foreach($Clients as $clients)
               <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 col-6 wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms" style="margin:0 auto;">
                  <div class="brand-wrap text-center">
