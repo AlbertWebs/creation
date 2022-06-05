@@ -1,149 +1,166 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>https://creationltd.co.ke</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/contact</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/news-updates</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/services</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/about</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/services/ceiling-floor-finishes</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/services/furniture-supply</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/services/refurbishments</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/services/partitioning</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/services/interior-architecture</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/services/construction</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/pj-kakad-and-advocates</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/global-star-tours-and-travels</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/safeway-hypermarket</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/sba-interior-design</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/national-olympic-committee-kenya</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/tls-nairobi-visa-processing-centre</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/bank-interior-design</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/gt-bank-headquaters</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/valar-frontiers-solutions-interior-design</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/westside-towers</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/jade-collection</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/tagcc-westlands</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/portfolio/centric-ambulance</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<url>
+  <loc>https://creationltd.co.ke/</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/about</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/services</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/contact</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/clients</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/uploads/files/CREATION-OFFICE-FITOUTS-COMPANY-PROFILE-2022.pdf</loc>
+  <lastmod>2022-05-26T02:45:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
-  <url>
-    <loc>https://creationltd.co.ke/copyright</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/terms</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://creationltd.co.ke/privacy</loc>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/gt-bank-headquaters</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/stihl-east-africa-ltd</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/igad</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/bank-interior-design</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/national-olympic-committee-kenya</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/yves-rocher-sarit-centre-branch</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/valar-frontiers-solutions-interior-design</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/sba-interior-design</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/services/interior-architecture</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/services/construction</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/services/refurbishments</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/services/partitioning</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/services/ceiling-floor-finishes</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/services/furniture-supply</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/privacy</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/terms</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/copyright</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/tls-nairobi-visa-processing-centre</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/global-star-tours-and-travels</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/pj-kakad-and-advocates</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/westside-towers</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/jade-collection</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/tagcc-westlands</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://creationltd.co.ke/portfolio/centric-ambulance</loc>
+  <lastmod>2022-06-05T06:53:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 </urlset>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
